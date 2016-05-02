@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+{% load staticfiles %}
+
+<head>
+	<link href="{% static "home/styles/style.css" %}" rel="stylesheet" type="text/css">
+	<link href="{% static "home/styles/style_mobile.css" %}" rel="stylesheet" type="text/css" media="only screen and (max-width: 400px)" >
+</head>
+
+<body>
+<div class="topsec">
+	<h1>My First Heading</h1>
+</div>
+
+<div class="midsec">	
+	<p>My first paragraph.</p>
+	HOME INDEX
+	<img class="cent_img" src="{% static "home/images/image1.jpg" %}" alt="My image"/>
+</div>
+<div class="botsec">
+	bottom
+</div>
+
+</body>
+</html>

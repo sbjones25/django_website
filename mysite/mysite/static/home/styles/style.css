@@ -1,0 +1,27 @@
+
+body {
+    /*background: white url("images/image1.jpg") no-repeat right bottom;*/
+    background-color: rgb(0,0,0);
+    margin: 0;
+}
+div {
+	border: solid 5px rgba(255,0,0,1);
+}
+
+.topsec {
+	background-color: rgb(0,0,128);
+
+}
+.midsec {
+	background-color: rgb(0,128,128);
+
+}
+.botsec {
+	background-color: rgb(128,128,0);
+
+}
+
+.cent_img {
+	max-width: 12em;
+	max-height: 8em;
+}
