@@ -4,21 +4,32 @@
 
 <head>
 	<link href="{% static "home/styles/style.css" %}" rel="stylesheet" type="text/css">
-	<link href="{% static "home/styles/style_mobile.css" %}" rel="stylesheet" type="text/css" media="only screen and (max-width: 400px)" >
+<!-- 	<link href="{% static "home/styles/style_mobile.css" %}" rel="stylesheet" type="text/css" media="only screen and (max-width: 400px)" > -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-<div class="topsec">
-	<h1>My First Heading</h1>
+<div class="topsec container-fluid">
+	<div class="row">
+		<div class="topsec_item col-md-4"></div>
+		<div class="topsec_item col-md-4">
+			<img id='logo' src="{% static "home/images/spurs_logo.jpg" %}">
+		</div>
+		<div class="topsec_item col-md-4"></div>
+	</div>
 </div>
 
 <div class="midsec">	
-	<p>My first paragraph.</p>
-	HOME INDEX
-	<img class="cent_img" src="{% static "home/images/image1.jpg" %}" alt="My image"/>
+	<p>Image Gallery</p>
+	<div class="img_container container-fluid">
+		<img class="cent_img container-fluid" src="{% static "home/images/image1.jpg" %}" alt="My image"/>
+	</div>
+	<p>Spurs: Kawhi Leonard</p>
 </div>
-<div class="botsec">
-	bottom
+<div class="botsec container-fluid">
+	Go Spurs Go!
 </div>
 
 </body>
