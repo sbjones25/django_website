@@ -25,7 +25,7 @@ html {
 }
 
 .scaled-container {
-	background: url(../images/src/main_content_bg.png) no-repeat center center; 
+	background: url(../images/src/main_content_bg.jpg) no-repeat center center; 
 	-webkit-background-size: contain;
 	-moz-background-size: contain;
 	-o-background-size: contain;
