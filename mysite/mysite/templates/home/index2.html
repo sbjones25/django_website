@@ -8,26 +8,20 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
-	<script src="{% static "home/js/main.js" %}" type="text/javascript"></script>
 </head>
 
 <body>
 <div class="main-outer-container container-fluid">
 <div class="scaled-container">
 	<div class="scaled-container-top">
-		<div class="nav-container">
-			<div id='search_div'>
-				<input id='search_text' type="text">
-				<input type="submit" onclick="searchPhotos()">
+		<div class="menu-container">
+			<div id="gallery" class="menu left-menu col-sm-2 col-sm-offset-3">
+				<img src="{% static "home/images/src/gallery.png" %}"></img>
 			</div>
-		</div>
-	</div>
-	<div id="slider-container">
-		<div id="slider" class="fotorama" data-width="100%" data-height="90%" data-loop="true" data-fit="contain">
-	  		<img src="http://s.fotorama.io/1.jpg">
-	  		<img src="http://s.fotorama.io/2.jpg">
+			<div class="menu col-sm-2"></div>
+			<div id="upload" class="menu right-menu col-sm-2">
+				<img src="{% static "home/images/src/upload.png" %}"></img>
+			</div>
 		</div>
 	</div>
 </div>
