@@ -17,7 +17,7 @@ def index(request):
 
 def search(request):
     query =  request.GET.get('search',None)
-    photos = flickr.photos_search(text=str(query))
+    photos = flickr.photos_search(text=str(query),sort='relevance')
     
     response = []
     for p in photos:

@@ -19,13 +19,14 @@
 	<div class="scaled-container-top">
 		<div class="nav-container">
 			<div id='search_div'>
-				<input id='search_text' type="text">
-				<input type="submit" onclick="searchPhotos()">
+				<b><strong>Search Flickr for Photos:</strong></b>
+				<input id='search_text' type="text" style="color:black;text-align:center;">
+				<input type="submit" onclick="searchPhotos()" style="color:black;">
 			</div>
 		</div>
 	</div>
 	<div id="slider-container">
-		<div id="slider" class="fotorama" data-width="100%" data-height="90%" data-loop="true" data-fit="contain">
+		<div id="slider" class="fotorama" data-width="100%" data-height="90%" data-loop="true" data-fit="contain" data-nav="thumbs">
 	  		<img src="http://s.fotorama.io/1.jpg">
 	  		<img src="http://s.fotorama.io/2.jpg">
 		</div>
